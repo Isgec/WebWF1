@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://localhost/atnweb1/atnwebservice.asmx?wsdl" docRef="http://localhost/atnweb1/atnwebservice.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://localhost/atnweb1/atnwebservice.asmx" xmlns:q1="http://cloud.isgec.co.in/" binding="q1:atnWebServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://localhost/atnweb1/atnwebservice.asmx" xmlns:q2="http://cloud.isgec.co.in/" binding="q2:atnWebServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

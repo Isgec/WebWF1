@@ -1,0 +1,92 @@
+﻿<div>
+  <table style="width:100%">
+    <tr>
+      <td colspan="4">
+        <h5>ENABLE / DISABLE REMINDER</h5>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3">
+        <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left;">
+        <input type="checkbox" id="F_OnMax" class="mychk" mIsMax />
+      </td>
+      <td class="alignright">
+        <span>Remind if Maximum Lapsed Days Exceeds :</span>
+      </td>
+      <td>
+        <input type="number" id="F_LapsDaysMax" style="text-align: right;width:88px" class="mytxt" onfocus="return this.select();" value="mMaxValue" />
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left;">
+        <input type="checkbox" id="F_OnCount" class="mychk" mIsCount />
+      </td>
+      <td class="alignright">
+        <span>Remind if Number Exceeds :</span> 
+      </td>
+      <td>
+        <input type="number" id="F_CountThreshold" style="text-align: right;width:88px" class="mytxt" onfocus="return this.select();" value="mCountValue" />
+      </td>
+    </tr>
+    <tr style="display:none;">
+      <td style="text-align:left;">
+        <input type="checkbox" id="F_OnAvg" class="mychk" mIsAvg />
+      </td>
+      <td style="text-align:left;">
+        <span>Reminder On Average :</span>
+      </td>
+      <td class="alignright">
+        <span>Average Laps Days :</span>
+      </td>
+      <td>
+        <input type="number" id="F_LapsDaysAvg" style="text-align: right;width:88px" class="mytxt" onfocus="return this.select();" value="mAvgValue" />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3">
+        <br/>
+        <br/>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align:right;">
+        <span>Remind After Every [Days]:</span>
+      </td>
+      <td>
+        <input type="number" id="F_FrequencyDays" style="text-align: right;width:88px" class="mytxt" onfocus="return this.select();" value="mDaysValue" />
+      </td>
+    </tr>
+    <tr style="display:none;">
+      <td colspan="3">
+        <table style="width:100%;">
+          <tr>
+            <td style="text-align:left;">
+              <span>Last Reminded On :</span>
+            </td>
+            <td style="text-align:left;font-weight:bold;">
+              <span>mLastRun</span>
+            </td>
+            <td class="alignright;">
+              <span>Next Scheduled Date :</span>
+            </td>
+            <td style="font-weight:bold;">
+              <span>mNextRun</span>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align:center;padding-top:15px;">
+        <button type="button" class="btn btn-warning btn-xs" onclick="script_wf.reminderReset();"><i class="fa fa-cog fa-1x">  Reset to default</i></button>
+      </td>
+      <td colspan="2" style="text-align:right;padding-top:15px;">
+        <button type="button" class="btn btn-success btn-xs" onclick="script_wf.reminderUpdate();" ><i class="fa fa-save fa-1x" style="color:black" >  UPDATE</i></button>
+      </td>
+    </tr>
+  </table>
+</div>
